@@ -1,0 +1,120 @@
+body{
+    font-family: calibri;
+  background: #252424;
+}
+header,footer{
+    height: 50px;
+    text-align: center;
+    color: #FF4F00;
+    font-size: 2.5rem;
+}
+.botom{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+button{
+       position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #00FF68;
+    color: #E44A05;
+    left: calc(50% - 45px);
+    top: calc(50% - 45px);
+    font-size: large;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 10px solid;
+}
+.c1,
+.c2,
+.c3{
+  position:absolute;
+  border-radius:50%;
+    border : 2px solid #2E2C2C;
+    box-shadow: 0 0 45px 10px #100F0F;
+    border-top-color: #FF4F00;
+}
+.c11,.c12,.c13,
+.c21,.c22,.c23,
+.c31,.c32,.c33{
+        background: #252424;
+  transition: all ease 500ms;
+  border-radius:50%;
+  border:1px solid red;
+  width:70px;
+  height:70px;
+  position:absolute;
+  left:calc(50% - 35px);
+  top:calc(50% - 35px);
+  transform-origin:center;  
+}
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.c11 {
+   background-color: #FEFEFF;
+    background-size: 143%;
+    background-position: 2px 1px;
+        border: 10px solid #E39760;
+}
+
+.c21 {
+     background-color: #FEFEFF;
+    background-size: 143%;
+    background-position: 4px -63px;
+        border: 10px solid #E39760;
+}
+.c31 {
+    background-color: #FEFEFF;
+    background-size: 143%;
+    background-position: 5px -124px;
+        border: 10px solid #E39760;
+}
+
+.c12 {
+      background-color: #FEFEFF;
+    background-size: 107%;
+    background-position: -3px -138px;
+        border: 10px solid #90A365;
+}
+
+.c22 {
+        background-color: #FEFEFF;
+    background-size: 179%;
+    background-position: 7px -414px;
+        border: 10px solid #90A365;
+}
+
+.c32 {
+   background-color: #FEFEFF;
+    background-size: 129%;
+    background-position: 9px -241px;
+        border: 10px solid #90A365;
+}
+
+.c13 {
+    background-color: #FEFEFF;
+    background-size: 133%;
+    background-position: 4px -341px;
+    border: 10px solid #5D4233;
+}
+
+.c23 {
+       background-color: #FEFEFF;
+    background-size: 124%;
+    background-position: 11px -365px;
+    border: 10px solid #5D4233;
+}
+
+.c33 {
+        background-color: #FEFEFF;
+    background-size: 179%;
+    background-position: 7px -631px;
+    border: 10px solid #5D4233;
+}

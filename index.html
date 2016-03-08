@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="tace">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>TAC-E</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body ng-controller="taceController">
+  <header>TAC - E</header>
+  
+  <div 
+       style="width:{{i.size}}px;
+              height:{{i.size}}px;
+              left:calc(50% - {{i.size/2}}px);
+              top:calc(50% - {{i.size/2}}px)"
+       class=c{{$index+1}} ng-repeat="i in circles"> 
+    <div style="transform:translate({{j.x}} , {{j.y}});opacity:{{j.opac}}"
+         class="sprite c{{$parent.$index+1}}{{$index+1}}" ng-repeat="j in i.innercircles"></div> 
+  </div>
+  <button  ng-disabled="disable" ng-click="drawCircles()">SPIN</button> 
+  <footer class=botom>{{msg.text}}</footer>
+</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</html>
